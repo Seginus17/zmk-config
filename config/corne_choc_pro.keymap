@@ -17,6 +17,33 @@
 };
 
 / {
+    macros {
+        num_lt: layout_numeric {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_tap>,
+                <&to 1 &rgb_ug RGB_COLOR_HSB(0,100,50)>;
+
+            label = "LAYOUT_NUMERIC";
+        };
+
+        nav_lt: nav_lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 2 &rgb_ug RGB_COLOR_HSB(226,100,50)>;
+            label = "NAV_LT";
+        };
+
+        base_lt: base_lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &rgb_ug RGB_OFF>;
+            label = "BASE_LT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,10 +91,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&to 1  &to 3   &none   &kp NUMBER_6  &kp RA(NUMBER_4)  &kp RA(N5)    &trans  &trans  &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
-&to 0  &trans  &trans  &trans        &kp NUMBER_4      &kp NUMBER_5  &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&to 2  &trans  &trans  &trans        &kp RA(X)         &kp RA(C)                     &none   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &none  &none
-                       &trans        &trans            &trans                        &trans  &trans          &trans
+&num_lt  &to 3   &kp NUMBER_3  &kp NUMBER_6  &kp RA(NUMBER_4)  &kp RA(N5)    &trans  &trans  &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
+&to 0    &trans  &kp GRAVE     &kp TILDE     &kp NUMBER_4      &kp NUMBER_5  &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
+&to 2    &trans  &kp EQUAL     &trans        &kp RA(X)         &kp RA(C)                     &none   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &none  &none
+                               &trans        &trans            &trans                        &trans  &trans          &trans
             >;
         };
 
