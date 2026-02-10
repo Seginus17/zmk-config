@@ -64,7 +64,7 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&to 1  &none   &kp TILDE     &kp NUMBER_6  &kp RA(NUMBER_4)  &kp RA(N5)    &trans  &trans  &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
+&to 1  &to 4   &kp TILDE     &kp NUMBER_6  &kp RA(NUMBER_4)  &kp RA(N5)    &trans  &trans  &none   &kp HOME        &kp UP_ARROW    &kp END          &none  &none
 &to 0  &trans  &kp NUMBER_1  &kp RA(G)     &kp NUMBER_4      &kp NUMBER_5  &trans  &trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
 &to 2  &trans  &kp RA(Z)     &kp NUMBER_9  &kp RA(X)         &kp RA(C)                     &none   &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &none  &none
                              &trans        &trans            &trans                        &trans  &trans          &trans
@@ -81,53 +81,12 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        azertyos {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp B   &kp N2  &kp P   &kp O    &kp N7  &trans  &trans  &kp FSLH  &kp D   &kp L   &kp J  &kp W  &trans
+&trans  &kp Q   &kp U   &kp I   &kp E    &kp M   &trans  &trans  &kp C     &kp T   &kp S   &kp R  &kp N  &kp M
+&trans  &kp N0  &kp Y   &kp X   &kp DOT  &kp K                   &kp N4    &kp A   &kp G   &kp H  &kp F  &trans
+                        &trans  &trans   &trans                  &trans    &trans  &trans
             >;
         };
     };
