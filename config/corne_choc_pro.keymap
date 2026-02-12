@@ -26,16 +26,6 @@
         };
     };
 
-    macros {
-        fullscreen: fullscreen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN>, <&kp UP>;
-
-            label = "FULLSCREEN";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
