@@ -83,6 +83,11 @@
             bindings = <&bt BT_SEL 4>;
             key-positions = <17 16>;
         };
+
+        layout-base {
+            bindings = <&to 0>;
+            key-positions = <18 16>;
+        };
     };
 
     keymap {
