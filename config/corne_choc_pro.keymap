@@ -31,6 +31,11 @@
             bindings = <&rgb_ug RGB_TOG>;
             key-positions = <12 13>;
         };
+
+        mouse {
+            bindings = <&tog 3>;
+            key-positions = <23 24 25>;
+        };
     };
 
     keymap {
