@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -26,61 +25,6 @@
         reset {
             bindings = <&sys_reset>;
             key-positions = <0 13>;
-        };
-
-        go_home {
-            bindings = <&to 0>;
-            key-positions = <41 32>;
-        };
-
-        bt-0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <33 32>;
-        };
-
-        bt-1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <19 18>;
-        };
-
-        bt-2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <5 4>;
-        };
-
-        bt-clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-        };
-
-        to-mouse {
-            bindings = <&to 3>;
-            key-positions = <23 25>;
-        };
-
-        bt-3 {
-            bindings = <&bt BT_SEL 3>;
-            key-positions = <30 31>;
-        };
-
-        bt-4 {
-            bindings = <&bt BT_SEL 4>;
-            key-positions = <17 16>;
-        };
-
-        layout-base {
-            bindings = <&to 0>;
-            key-positions = <18 16>;
-        };
-
-        to-numeric {
-            bindings = <&to 1>;
-            key-positions = <9 11>;
-        };
-
-        to-nav {
-            bindings = <&to 2>;
-            key-positions = <35 37>;
         };
 
         rgb-toggle {
@@ -105,7 +49,7 @@
 &kp ESCAPE            &kp Q  &kp W  &kp E         &kp R  &kp T      &kp LGUI   &kp BACKSPACE  &kp Y      &kp U  &kp I          &kp O    &kp P     &kp LBKT
 &mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G      &kp ENTER  &kp ENTER      &kp H      &kp J  &kp K          &kp L    &kp SEMI  &mt RCTRL SINGLE_QUOTE
 &mt LEFT_SHIFT RBKT   &kp Z  &kp X  &kp C         &kp V  &kp B                                &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                    &kp LEFT_ALT  &mo 2  &kp SPACE                            &kp SPACE  &mo 1  &kp RIGHT_ALT
+                                    &kp LEFT_ALT  &mo 1  &kp SPACE                            &kp SPACE  &mo 1  &kp RIGHT_ALT
             >;
         };
 
@@ -122,7 +66,7 @@
 &trans  &kp NUMBER_6  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)  &trans  &trans  &kp MINUS         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_DIVIDE    &kp KP_MULTIPLY
 &trans  &none         &kp RA(G)         &kp NUMBER_1      &kp NUMBER_4      &kp NUMBER_5      &trans  &trans  &kp V             &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp KP_SUBTRACT  &kp KP_PLUS
 &trans  &none         &kp NUMBER_2      &kp NUMBER_3      &kp RA(X)         &kp RA(C)                         &kp LS(NUMBER_0)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp N4           &kp N5
-                                        &trans            &trans            &trans                            &trans            &to 0             &trans
+                                        &trans            &trans            &trans                            &trans            &trans            &trans
             >;
         };
 
@@ -150,6 +94,15 @@
 &trans  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
 &trans  &none  &none      &none      &none      &kp ESC                   &none           &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans  &trans
                           &trans     &trans     &trans                    &mkp LCLK       &to 0           &mkp RCLK
+            >;
+        };
+
+        layers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
