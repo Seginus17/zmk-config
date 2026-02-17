@@ -36,6 +36,16 @@
             bindings = <&tog 3>;
             key-positions = <23 24 25>;
         };
+
+        navigation {
+            bindings = <&to 2>;
+            key-positions = <35 36 37>;
+        };
+
+        numeric {
+            bindings = <&to 1>;
+            key-positions = <9 10 11>;
+        };
     };
 
     keymap {
