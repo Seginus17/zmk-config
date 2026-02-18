@@ -10,6 +10,11 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <120>;
+};
+
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
@@ -28,24 +33,19 @@
             key-positions = <0 13>;
         };
 
-        rgb-toggle {
-            bindings = <&rgb_ug RGB_TOG>;
-            key-positions = <12 13>;
-        };
-
         mouse {
-            bindings = <&tog 3>;
-            key-positions = <23 24 25>;
+            bindings = <&to 3>;
+            key-positions = <23 25 24>;
         };
 
         navigation {
             bindings = <&to 2>;
-            key-positions = <35 36 37>;
+            key-positions = <35 37 36>;
         };
 
         numeric {
             bindings = <&to 1>;
-            key-positions = <9 10 11>;
+            key-positions = <9 11 10>;
         };
     };
 
@@ -96,10 +96,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&trans  &kp INS        &kp HOME    &kp UP    &kp END    &kp PG_UP     &trans  &trans  &kp F1         &kp F2   &kp F3  &kp F4  &kp F5   &none
-&trans  &none          &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN     &trans  &trans  &kp F6         &kp F7   &kp F8  &kp F9  &kp F10  &none
-&trans  &kp BACKSPACE  &kp DELETE  &none     &none      &kp LGUI                      &kp F11        &kp F12  &none   &none   &none    &none
-                                   &trans    &trans     &kp LEFT_WIN                  &kp RIGHT_WIN  &to 0    &trans
+&trans  &kp INS        &kp HOME    &kp UP    &kp END    &kp PG_UP     &trans  &trans  &kp HOME       &kp HOME  &kp UP    &kp END    &kp PG_UP  &none
+&trans  &none          &kp LEFT    &kp DOWN  &kp RIGHT  &kp PG_DN     &trans  &trans  &kp F6         &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+&trans  &kp BACKSPACE  &kp DELETE  &none     &none      &kp LGUI                      &kp F11        &kp F12   &none     &none      &none      &none
+                                   &trans    &trans     &kp LEFT_WIN                  &kp RIGHT_WIN  &to 0     &trans
             >;
         };
 
