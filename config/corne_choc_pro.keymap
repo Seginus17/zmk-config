@@ -25,12 +25,12 @@
 
         go-to-system {
             bindings = <&to 4>;
-            key-positions = <28 39>;
+            key-positions = <29 30 31>;
         };
 
         reset {
             bindings = <&sys_reset>;
-            key-positions = <0 13>;
+            key-positions = <1 2 3>;
         };
 
         mouse {
@@ -115,10 +115,10 @@
 
         layers {
             bindings = <
-&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4
-&rgb_ug RGB_TOG  &trans           &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &bt BT_SEL 2  &bt BT_CLR
-                                          &trans  &trans  &trans                  &trans  &to 0   &trans
+&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG  &trans           &trans  &trans  &bt BT_SEL 2  &bt BT_CLR                    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans  &trans        &trans                        &trans  &to 0   &trans
             >;
         };
     };
