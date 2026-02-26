@@ -118,5 +118,15 @@
                                           &trans          &trans        &trans                        &trans  &to 0           &trans
             >;
         };
+
+        ergo-l {
+            display-name = "base";
+            bindings = <
+&kp ESCAPE            &kp Q  &kp W  &kp E         &kp R  &kp T      &kp LGUI   &kp BACKSPACE  &kp Y      &kp U  &kp I          &kp O    &kp P     &kp LBKT
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D         &kp F  &kp G      &kp ENTER  &kp ENTER      &kp H      &kp J  &kp K          &kp L    &kp SEMI  &mt RCTRL SINGLE_QUOTE
+&mt LEFT_SHIFT RBKT   &kp Z  &kp X  &kp C         &kp V  &kp B                                &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
+                                    &kp LEFT_ALT  &mo 1  &kp SPACE                            &kp SPACE  &mo 1  &kp RIGHT_ALT
+            >;
+        };
     };
 };
