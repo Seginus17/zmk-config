@@ -73,9 +73,9 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        interogation: interogation {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "INTEROGATION";
             bindings = <&kp NUMBER_8>, <&kp LS(N)>;
 
             #binding-cells = <0>;
@@ -159,10 +159,10 @@
         ergo-l {
             display-name = "base";
             bindings = <
-&kp ESCAPE            &kp M     &kp H  &kp R   &kp E     &kp RBKT  &kp LGUI   &kp BACKSPACE  &kp P   &kp APOS  &kp I      &sl 6  &kp X  &kp LBKT
-&mt LEFT_CONTROL TAB  &kp A     &kp K  &kp F   &kp SEMI  &kp FSLH  &kp ENTER  &kp ENTER      &kp O   &kp L     &kp J      &kp D  &kp S  &mt RCTRL SINGLE_QUOTE
-&mt LEFT_SHIFT RBKT   &kp LBKT  &kp C  &kp N8  &kp U     &kp Q                               &kp V   &kp DOT   &kp COMMA  &kp G  &kp B  &mt RIGHT_SHIFT BACKSLASH
-                                       &trans  &trans    &trans                              &trans  &trans    &trans
+&kp ESCAPE            &kp M     &kp H  &kp R          &kp E     &kp RBKT  &kp LGUI   &kp BACKSPACE  &kp P   &kp APOS  &kp I      &sl 6  &kp X  &kp LBKT
+&mt LEFT_CONTROL TAB  &kp A     &kp K  &kp F          &kp SEMI  &kp FSLH  &kp ENTER  &kp ENTER      &kp O   &kp L     &kp J      &kp D  &kp S  &mt RCTRL SINGLE_QUOTE
+&mt LEFT_SHIFT RBKT   &kp LBKT  &kp C  &interogation  &kp U     &kp Q                               &kp V   &kp DOT   &kp COMMA  &kp G  &kp B  &mt RIGHT_SHIFT BACKSLASH
+                                       &trans         &trans    &trans                              &trans  &trans    &trans
             >;
         };
 
