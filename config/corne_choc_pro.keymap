@@ -63,6 +63,13 @@
             bindings = <&kp Y &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "ACCENTCIRC";
         };
+
+        trema: trema {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp RA(D) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TREMA";
+        };
     };
 
     keymap {
@@ -150,10 +157,10 @@
 
         ergoaccent {
             bindings = <
-&trans  &trans     &kp ASTRK  &kp RA(R)  &trans         &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp W      &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5  &trans  &trans  &kp S   &trans
-&trans  &kp RA(A)  &trans     &trans     &trans         &trans                  &kp RA(V)  &trans  &trans  &trans  &trans  &trans
-                              &trans     &trans         &kp N                   &kp N      &trans  &trans
+&trans  &accentcirc A  &kp COMMA  &kp RA(R)  &accentcirc R  &trans  &trans  &trans  &trans     &kp RA(N)  &kp RA(SPACE)  &trans         &accentcirc S  &trans
+&trans  &kp RA(Z)      &kp W      &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &kp RA(D)      &trans
+&trans  &kp RA(A)      &trans     &trans     &trans         &trans                  &kp RA(V)  &trans     &trans         &kp LS(RA(V))  &trans         &trans
+                                  &trans     &trans         &kp N                   &kp N      &trans     &trans
             >;
         };
     };
