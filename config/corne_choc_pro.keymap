@@ -150,10 +150,10 @@
 
         ergoaccent {
             bindings = <
-&trans  &trans     &kp BSLH  &kp RA(R)  &trans         &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp W     &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5  &trans  &trans  &kp S   &trans
-&trans  &kp RA(A)  &trans    &trans     &trans         &trans                  &kp RA(V)  &trans  &trans  &trans  &trans  &trans
-                             &trans     &trans         &kp N                   &kp N      &trans  &trans
+&trans  &trans     &kp ASTRK  &kp RA(R)  &trans         &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp W      &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5  &trans  &trans  &kp S   &trans
+&trans  &kp RA(A)  &trans     &trans     &trans         &trans                  &kp RA(V)  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans         &kp N                   &kp N      &trans  &trans
             >;
         };
     };
