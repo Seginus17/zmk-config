@@ -77,7 +77,7 @@
 &kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P         &kp APOS   &kp I          &sl 1  &kp X  &to 0
 &kp LCTRL       &kp A     &kp K  &kp F          &kp SEMI   &kp FSLH  &kp ENTER   &kp ENTER      &kp O         &kp L      &kp J          &kp D  &kp S  &kp ENTER
 &kp LEFT_SHIFT  &kp LBKT  &kp C  &interogation  &kp U      &kp Q                                &kp V         &kp DOT    &kp COMMA      &kp G  &kp B  &kp RIGHT_SHIFT
-                                 &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &mtlayer 3 6  &kp SPACE  &kp RIGHT_ALT
+                                 &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &mtlayer 3 4  &kp SPACE  &kp RIGHT_ALT
             >;
         };
 
@@ -105,6 +105,16 @@
 &kp C_BRI_MIN         &kp C_BRIGHTNESS_MAXIMUM  &kp LEFT           &kp DOWN    &kp RIGHT     &kp PG_DN  &trans  &trans  &none   &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(N0)  &trans
 &trans                &trans                    &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOL_UP  &kp BSPC                   &kp G   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp V       &trans
                                                                    &trans      &trans        &trans                     &trans  &trans      &trans
+            >;
+        };
+
+        mouse {
+            display-name = "mouse";
+            bindings = <
+&trans  &none  &mkp MB5   &none      &mkp MB4   &kp HOME  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp C_AC_CLOSE  &trans
+&trans  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &trans
+&trans  &none  &none      &none      &none      &kp ESC                   &none           &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans          &trans
+                          &trans     &trans     &trans                    &mtlayer 3 0    &trans          &trans
             >;
         };
 
@@ -142,16 +152,6 @@
             >;
         };
 
-        mouse {
-            display-name = "mouse";
-            bindings = <
-&trans  &none  &mkp MB5   &none      &mkp MB4   &kp HOME  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp C_AC_CLOSE  &trans
-&trans  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &trans
-&trans  &none  &none      &none      &none      &kp ESC                   &none           &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans          &trans
-                          &trans     &trans     &trans                    &trans          &trans          &trans
-            >;
-        };
-
         system {
             bindings = <
 &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
@@ -174,7 +174,7 @@
 &kp ESCAPE            &kp Q  &kp W  &kp E  &kp R         &kp T      &kp LGUI   &kp BACKSPACE  &kp Y      &kp U     &kp I      &kp O    &kp P     &kp LBKT
 &mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D  &kp F         &kp G      &kp ENTER  &kp ENTER      &kp H      &kp J     &kp K      &kp L    &kp SEMI  &mt RCTRL SINGLE_QUOTE
 &mt LEFT_SHIFT RBKT   &kp Z  &kp X  &kp C  &kp V         &kp B                                &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                    &mo 4  &kp LEFT_ALT  &kp SPACE                            &kp SPACE  &kp RALT  &mo 5
+                                    &mo 5  &kp LEFT_ALT  &kp SPACE                            &kp SPACE  &kp RALT  &mo 6
             >;
         };
     };
