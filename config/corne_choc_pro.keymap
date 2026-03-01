@@ -74,10 +74,10 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P         &kp APOS   &kp I          &sl 1  &kp X  &to 0
-&kp LCTRL       &kp A     &kp K  &kp F          &kp SEMI   &kp FSLH  &kp ENTER   &kp ENTER      &kp O         &kp L      &kp J          &kp D  &kp S  &kp ENTER
-&kp LEFT_SHIFT  &kp LBKT  &kp C  &interogation  &kp U      &kp Q                                &kp V         &kp DOT    &kp COMMA      &kp G  &kp B  &kp RIGHT_SHIFT
-                                 &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &mtlayer 3 4  &kp SPACE  &kp RIGHT_ALT
+&kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P      &kp APOS      &kp I          &sl 1  &kp X  &to 0
+&kp LCTRL       &kp A     &kp K  &kp F          &kp SEMI   &kp FSLH  &kp ENTER   &kp ENTER      &kp O      &kp L         &kp J          &kp D  &kp S  &kp ENTER
+&kp LEFT_SHIFT  &kp LBKT  &kp C  &interogation  &kp U      &kp Q                                &kp V      &kp DOT       &kp COMMA      &kp G  &kp B  &kp RIGHT_SHIFT
+                                 &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &kp SPACE  &mtlayer 3 4  &kp RIGHT_ALT
             >;
         };
 
@@ -114,7 +114,7 @@
 &trans  &none  &mkp MB5   &none      &mkp MB4   &kp HOME  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp C_AC_CLOSE  &trans
 &trans  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &trans
 &trans  &none  &none      &none      &none      &kp ESC                   &none           &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans          &trans
-                          &trans     &trans     &trans                    &mtlayer 3 0    &trans          &trans
+                          &trans     &trans     &trans                    &trans          &mtlayer 3 0    &trans
             >;
         };
 
