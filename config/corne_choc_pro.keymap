@@ -74,7 +74,7 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P         &kp APOS   &kp I          &sl 1  &kp X  &tog 6
+&kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P         &kp APOS   &kp I          &sl 1  &kp X  &to 0
 &kp LCTRL       &kp A     &kp K  &kp F          &kp SEMI   &kp FSLH  &kp ENTER   &kp ENTER      &kp O         &kp L      &kp J          &kp D  &kp S  &kp ENTER
 &kp LEFT_SHIFT  &kp LBKT  &kp C  &interogation  &kp U      &kp Q                                &kp V         &kp DOT    &kp COMMA      &kp G  &kp B  &kp RIGHT_SHIFT
                                  &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &mtlayer 3 6  &kp SPACE  &kp RIGHT_ALT
