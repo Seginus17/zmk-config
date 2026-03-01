@@ -25,31 +25,6 @@
             key-positions = <30 31 32>;
         };
 
-        reset {
-            bindings = <&sys_reset>;
-            key-positions = <2 3 4>;
-        };
-
-        mouse {
-            bindings = <&to 6>;
-            key-positions = <23 25 24>;
-        };
-
-        navigation {
-            bindings = <&to 5>;
-            key-positions = <35 37 36>;
-        };
-
-        numeric {
-            bindings = <&to 4>;
-            key-positions = <9 11 10>;
-        };
-
-        ergo {
-            bindings = <&to 0>;
-            key-positions = <16 17 18>;
-        };
-
         base {
             bindings = <&to 8>;
             key-positions = <40 45>;
@@ -81,6 +56,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mtlayer: mtlayer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MTLAYER";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -89,10 +74,10 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P  &kp APOS   &kp I          &sl 1  &kp X  &tog 6
-&kp LCTRL       &kp A     &kp K  &kp F          &kp SEMI   &kp FSLH  &kp ENTER   &kp ENTER      &kp O  &kp L      &kp J          &kp D  &kp S  &kp ENTER
-&kp LEFT_SHIFT  &kp LBKT  &kp C  &interogation  &kp U      &kp Q                                &kp V  &kp DOT    &kp COMMA      &kp G  &kp B  &kp RIGHT_SHIFT
-                                 &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &mo 3  &kp SPACE  &kp RIGHT_ALT
+&kp TAB         &kp M     &kp H  &kp R          &kp E      &kp RBKT  &kp ESCAPE  &kp BACKSPACE  &kp P         &kp APOS   &kp I          &sl 1  &kp X  &tog 6
+&kp LCTRL       &kp A     &kp K  &kp F          &kp SEMI   &kp FSLH  &kp ENTER   &kp ENTER      &kp O         &kp L      &kp J          &kp D  &kp S  &kp ENTER
+&kp LEFT_SHIFT  &kp LBKT  &kp C  &interogation  &kp U      &kp Q                                &kp V         &kp DOT    &kp COMMA      &kp G  &kp B  &kp RIGHT_SHIFT
+                                 &kp LEFT_ALT   &kp LCTRL  &kp LCMD                             &mtlayer 3 6  &kp SPACE  &kp RIGHT_ALT
             >;
         };
 
