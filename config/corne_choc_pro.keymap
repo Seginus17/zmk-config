@@ -177,9 +177,9 @@
 
         ergo-symbol {
             bindings = <
-&trans  &trans     &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp GRAVE      &kp EQUAL      &trans  &trans  &kp NUMBER_6  &kp RA(E)     &kp NUMBER_0  &kp RA(G)     &kp RA(T)     &trans
-&trans  &kp RA(X)  &kp NUMBER_4      &kp NUMBER_5      &kp RA(C)      &kp MINUS      &trans  &trans  &kp RA(Z)     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_1  &trans
-&trans  &kp RA(B)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)  &kp RA(SPACE)  &kp LS(GRAVE)                  &kp RA(Q)     &kp LS(Y)     &kp LS(G)     &kp V         &kp LS(N)     &trans
+&trans  &trans     &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp GRAVE      &kp EQUAL      &trans  &trans  &kp NUMBER_6  &kp RA(E)     &kp NUMBER_0  &kp RA(G)     &kp LS(EQUAL)  &trans
+&trans  &kp RA(X)  &kp NUMBER_4      &kp NUMBER_5      &kp RA(C)      &kp MINUS      &trans  &trans  &kp RA(Z)     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_1   &trans
+&trans  &kp RA(B)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)  &kp RA(SPACE)  &kp LS(GRAVE)                  &kp RA(Q)     &kp LS(Y)     &kp LS(G)     &kp LS(V)     &kp LS(N)      &trans
                                      &trans            &trans         &trans                         &trans        &trans        &trans
             >;
         };
