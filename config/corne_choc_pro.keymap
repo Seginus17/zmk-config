@@ -102,7 +102,7 @@
         ergo-be-accent {
             bindings = <
 &trans  &accentcirc A  &kp BSLH  &kp RA(R)  &accentcirc R  &trans  &trans  &trans  &trans     &kp RA(N)  &kp RA(SPACE)  &trans         &accentcirc S  &trans
-&trans  &kp Z          &kp W     &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &trema RA(S)   &trans
+&trans  &kp Z          &kp W     &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &trema S       &trans
 &trans  &kp RA(A)      &trans    &kp RA(F)  &trans         &trans                  &kp RA(V)  &trans     &trans         &kp LS(RA(V))  &trans         &trans
                                  &trans     &trans         &trans                  &kp N      &trans     &trans
             >;
