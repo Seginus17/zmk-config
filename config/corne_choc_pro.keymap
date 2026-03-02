@@ -41,6 +41,12 @@
             key-positions = <41 40 42>;
             layers = <5>;
         };
+
+        reset {
+            bindings = <&reset>;
+            key-positions = <2 3 4>;
+            layers = <5>;
+        };
     };
 
     macros {
