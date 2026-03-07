@@ -92,19 +92,19 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp ESCAPE  &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE  &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
-&tog 3      &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp TAB     &kp TAB        &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &to 4
-&kp K_LOCK  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp LA(F4)
-                                             &to 3          &kp ENTER            &kp SPACE                                  &kp SPACE       &kp ENTER          &to 4
+&kp ESCAPE    &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE  &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
+&tog 3        &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp TAB     &kp TAB        &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &to 4
+&kp K_COFFEE  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp LA(F4)
+                                               &to 3          &kp ENTER            &kp SPACE                                  &kp SPACE       &kp ENTER          &to 4
             >;
         };
 
         ergo-be-accent {
             bindings = <
-&trans  &accentcirc A  &kp BSLH  &kp RA(R)  &accentcirc R  &trans  &trans  &trans  &trans     &kp RA(N)  &kp RA(SPACE)  &trans         &accentcirc S  &trans
-&trans  &kp Z          &kp W     &kp T      &accentcirc F  &trans  &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &kp RA(S)      &trans
-&trans  &kp RA(A)      &trans    &kp RA(F)  &trans         &trans                  &kp RA(V)  &trans     &trans         &kp LS(RA(V))  &trans         &trans
-                                 &trans     &trans         &trans                  &kp N      &trans     &trans
+&trans  &accentcirc A  &kp BSLH  &kp RA(R)  &accentcirc R  &trans    &trans  &trans  &trans     &kp RA(N)  &kp RA(SPACE)  &trans         &accentcirc S  &trans
+&trans  &kp Z          &kp W     &kp T      &accentcirc F  &trema F  &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &kp RA(S)      &trans
+&trans  &kp RA(A)      &trans    &kp RA(F)  &trans         &trans                    &kp RA(V)  &trans     &trans         &kp LS(RA(V))  &trema S       &trans
+                                 &trans     &trans         &trans                    &kp N      &trans     &trans
             >;
         };
 
