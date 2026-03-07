@@ -92,10 +92,10 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp TAB        &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp ESCAPE  &kp ESCAPE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
-&tog 3         &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp TAB     &kp TAB     &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &tog 4
-&kp BACKSPACE  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                          &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp DELETE
-                                                &tog 3         &kp SPACE            &kp ENTER                               &kp ENTER       &kp SPACE          &tog 4
+&kp TAB     &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE  &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
+&tog 3      &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp TAB     &kp TAB        &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &tog 4
+&kp ESCAPE  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp ESCAPE
+                                             &tog 3         &kp SPACE            &kp ENTER                                  &kp ENTER       &kp SPACE          &tog 4
             >;
         };
 
