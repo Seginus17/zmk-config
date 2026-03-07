@@ -94,7 +94,7 @@
             bindings = <
 &kp ESCAPE  &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE  &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
 &tog 3      &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp TAB     &kp TAB        &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &to 4
-&kp F5      &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp LA(F4)
+&kp K_LOCK  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp LA(F4)
                                              &to 3          &kp ENTER            &kp SPACE                                  &kp SPACE       &kp ENTER          &to 4
             >;
         };
