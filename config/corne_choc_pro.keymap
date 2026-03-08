@@ -27,7 +27,7 @@
 
         goto-rescue {
             bindings = <&to 0>;
-            key-positions = <40 45>;
+            key-positions = <16 17 18>;
         };
 
         bt-clear {
@@ -50,17 +50,17 @@
 
         goto-base {
             bindings = <&to 0>;
-            key-positions = <42 43>;
+            key-positions = <23 24 25>;
         };
 
         goto-nav {
             bindings = <&to 3>;
-            key-positions = <20 21>;
+            key-positions = <10 9 11>;
         };
 
         goto-mouse {
             bindings = <&to 4>;
-            key-positions = <6 7>;
+            key-positions = <35 36 37>;
         };
     };
 
