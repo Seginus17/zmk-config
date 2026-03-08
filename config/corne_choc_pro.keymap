@@ -119,10 +119,10 @@
 
         ergo-be-nav {
             bindings = <
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC      &kp HOME           &kp UP      &kp END       &kp PG_UP  &trans  &trans  &none   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans      &trans
-&kp C_BRI_MIN         &kp C_BRIGHTNESS_MAXIMUM  &kp LEFT           &kp DOWN    &kp RIGHT     &kp PG_DN  &trans  &trans  &none   &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(N0)  &trans
-&trans                &trans                    &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOL_UP  &kp BSPC                   &kp G   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp V       &trans
-                                                                   &trans      &trans        &trans                     &trans  &trans      &trans
+&trans  &none         &kp HOME      &kp UP        &kp END       &kp PG_UP  &trans  &trans  &none   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans      &trans
+&trans  &none         &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN  &trans  &trans  &none   &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(N0)  &trans
+&trans  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp NUMBER_0  &kp BSPC                   &kp G   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp V       &trans
+                                    &trans        &trans        &trans                     &trans  &trans      &trans
             >;
         };
 
