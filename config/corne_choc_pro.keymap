@@ -144,10 +144,10 @@
         mouse {
             display-name = "mouse";
             bindings = <
-&trans  &trans  &mkp MB5   &none      &mkp MB4   &kp HOME  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp C_AC_CLOSE  &trans
-&trans  &none   &mkp RCLK  &mkp MCLK  &mkp LCLK  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &trans
-&trans  &trans  &none      &none      &none      &kp ESC                   &none           &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans          &trans
-                           &to 0      &trans     &trans                    &mkp LCLK       &mkp RCLK       &to 0
+&trans  &trans         &mkp MB5      &none      &mkp MB4        &kp HOME  &trans  &trans  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp C_AC_CLOSE  &trans
+&trans  &kp RIGHT_ALT  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp END   &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &trans
+&trans  &trans         &mkp RCLK     &mkp MCLK  &mkp LCLK       &kp ESC                   &none           &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans          &trans
+                                     &to 0      &trans          &trans                    &mkp LCLK       &mkp RCLK       &to 0
             >;
         };
 
