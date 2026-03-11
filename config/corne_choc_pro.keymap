@@ -55,12 +55,12 @@
 
         goto-nav {
             bindings = <&to 3>;
-            key-positions = <10 9 11>;
+            key-positions = <35 36 37>;
         };
 
         goto-mouse {
             bindings = <&to 4>;
-            key-positions = <35 36 37>;
+            key-positions = <11 10 9>;
         };
     };
 
@@ -110,7 +110,7 @@
 &kp ESCAPE  &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE    &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
 &tog 3      &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp LEFT_GUI  &kp RIGHT_GUI  &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &to 4
 &kp TAB     &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                               &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp TAB
-                                             &to 3          &kp ENTER            &kp SPACE                                    &kp SPACE       &kp ENTER          &to 4
+                                             &to 3          &kp ENTER            &kp SPACE                                    &kp SPACE       &kp ENTER          &mo 6
             >;
         };
 
@@ -173,7 +173,7 @@
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &trans  &trans  &none   &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10   &trans  &trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
 &trans  &kp F11  &kp F12  &none   &none   &kp LGUI                  &none   &none     &none     &none      &kp LGUI   &trans
-                          &trans  &trans  &trans                    &trans  &trans    &to 7
+                          &trans  &trans  &trans                    &trans  &trans    &trans
             >;
         };
 
