@@ -107,25 +107,25 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp ESCAPE  &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE    &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
-&tog 3      &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp LEFT_GUI  &kp RIGHT_GUI  &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &to 4
-&kp TAB     &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                               &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp TAB
-                                             &to 3          &kp ENTER            &kp SPACE                                    &kp SPACE       &kp ENTER          &mo 6
+&kp ESCAPE    &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE  &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &to 0
+&kp TAB       &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp ENTER   &kp ENTER      &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &kp TAB
+&kp LEFT_GUI  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp RIGHT_GUI
+                                               &mo 3          &kp ENTER            &kp SPACE                                  &kp SPACE       &kp ENTER          &mo 6
             >;
         };
 
         ergo-be-accent {
             bindings = <
-&trans  &accentcirc A  &kp BSLH  &kp RA(R)  &accentcirc R  &trans    &trans  &trans  &trans     &kp RA(N)  &kp RA(SPACE)  &trans         &accentcirc S  &trans
-&trans  &kp Z          &kp W     &kp T      &accentcirc F  &trema F  &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &kp RA(S)      &trans
-&trans  &kp RA(A)      &trans    &kp RA(F)  &trans         &trans                    &kp RA(V)  &trans     &trans         &kp LS(RA(V))  &trema S       &trans
-                                 &trans     &trans         &trans                    &kp N      &trans     &trans
+&trans  &accentcirc A  &kp BSLH  &kp RA(R)  &accentcirc R  &none          &trans  &trans  &none      &kp RA(N)  &kp RA(SPACE)  &none          &accentcirc S  &trans
+&trans  &kp Z          &kp W     &kp T      &accentcirc F  &trema F       &trans  &trans  &kp N4     &kp N5     &accentcirc D  &trema D       &kp RA(S)      &trans
+&trans  &kp RA(A)      &none     &kp RA(F)  &none          &none                          &kp RA(V)  &none      &none          &kp LS(RA(V))  &trema S       &trans
+                                 &trans     &trans         &kp LS(SPACE)                  &kp N      &trans     &trans
             >;
         };
 
         ergo-be-symbol {
             bindings = <
-&trans  &trans     &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp GRAVE      &kp EQUAL      &trans  &trans  &kp NUMBER_6  &kp RA(E)     &kp NUMBER_0  &kp RA(G)     &kp LS(EQUAL)  &trans
+&trans  &none      &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp GRAVE      &kp EQUAL      &trans  &trans  &kp NUMBER_6  &kp RA(E)     &kp NUMBER_0  &kp RA(G)     &kp LS(EQUAL)  &trans
 &trans  &kp RA(X)  &kp NUMBER_4      &kp NUMBER_5      &kp RA(C)      &kp MINUS      &trans  &trans  &kp RA(Z)     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_1   &trans
 &trans  &kp RA(B)  &kp RA(NUMBER_4)  &kp RA(NUMBER_5)  &kp RA(SPACE)  &kp LS(GRAVE)                  &kp RA(Q)     &kp LS(Y)     &kp LS(G)     &kp LS(V)     &kp LS(N)      &trans
                                      &trans            &trans         &trans                         &trans        &trans        &trans
