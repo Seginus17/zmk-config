@@ -22,7 +22,7 @@
 
         goto-system {
             bindings = <&to 5>;
-            key-positions = <30 31 32>;
+            key-positions = <30 28 29>;
         };
 
         goto-rescue {
@@ -61,6 +61,11 @@
         goto-mouse {
             bindings = <&to 4>;
             key-positions = <11 10 9>;
+        };
+
+        gaming {
+            bindings = <&to 8>;
+            key-positions = <30 31 32>;
         };
     };
 
@@ -191,6 +196,15 @@
 &trans      &mt RALT A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G   &trans  &trans  &kp H   &mt RIGHT_SHIFT J  &mt RCTRL K  &mt LALT L  &mt RALT SEMI  &kp SINGLE_QUOTE
 &kp RBKT    &kp Z       &kp X           &kp C        &lt 3 V           &kp B                   &kp N   &lt 3 M            &kp COMMA    &kp DOT     &kp FSLH       &kp BACKSLASH
                                         &trans       &trans            &trans                  &trans  &trans             &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp ESC    &kp CAPS   &kp A     &kp RBKT  &kp F      &kp L      &trans  &kp HOME  &kp F1   &kp F2   &kp HOME  &kp UP    &kp END    &kp C_VOLUME_UP
+&kp TAB    &kp LSHFT  &kp M     &kp K     &kp I      &kp FSLH   &trans  &kp END   &kp F6   &kp F7   &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_DOWN
+&kp LCTRL  &kp LALT   &kp LBKT  &kp C     &kp H      &kp U                        &kp F11  &kp F12  &none     &none     &none      &kp K_MUTE
+                                &trans    &kp ENTER  &kp SPACE                    &trans   &trans   &trans
             >;
         };
     };
