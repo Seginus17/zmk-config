@@ -201,10 +201,10 @@
 
         gaming {
             bindings = <
-&kp ESC    &kp CAPS   &kp A     &kp RBKT  &kp F      &kp L      &trans  &kp HOME  &kp F1   &kp F2   &kp HOME  &kp UP    &kp END    &kp C_VOLUME_UP
-&kp TAB    &kp LSHFT  &kp M     &kp K     &kp I      &kp FSLH   &trans  &kp END   &kp F6   &kp F7   &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_DOWN
-&kp LCTRL  &kp LALT   &kp LBKT  &kp C     &kp H      &kp U                        &kp F11  &kp F12  &none     &none     &none      &kp K_MUTE
-                                &trans    &kp ENTER  &kp SPACE                    &trans   &trans   &trans
+&kp ESC    &kp CAPS   &kp M     &kp RBKT  &kp F      &kp L      &trans  &kp HOME  &kp F1  &kp F2  &kp HOME  &kp UP    &kp END    &kp C_VOLUME_UP
+&kp TAB    &kp LSHFT  &kp A     &kp K     &kp I      &kp FSLH   &trans  &kp END   &kp F3  &kp F4  &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_DOWN
+&kp LCTRL  &kp LALT   &kp LBKT  &kp C     &kp H      &kp U                        &kp F5  &kp F6  &kp F7    &kp F8    &kp F9     &kp K_MUTE
+                                &trans    &kp ENTER  &kp SPACE                    &trans  &trans  &trans
             >;
         };
     };
