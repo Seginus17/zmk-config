@@ -210,10 +210,10 @@
 
         hperland {
             bindings = <
-&kp F1  &kp F2  &kp RA(RC(F1))  &kp RA(RC(F2))   &kp RA(RC(F3))   &kp RA(RC(F4))   &trans  &trans  &kp LA(RA(F1))  &kp RA(LA(F2))   &kp RA(LA(F3))   &kp RA(LA(F4))   &kp F7   &kp F8
-&kp F3  &kp F4  &kp RA(RC(F5))  &kp RA(RC(F6))   &kp RA(RC(F7))   &kp RA(RC(F8))   &trans  &trans  &kp RA(LA(F5))  &kp RA(LA(F6))   &kp LA(RA(F7))   &kp RA(LA(F8))   &kp F9   &kp F10
-&kp F5  &kp F6  &kp RA(RC(F9))  &kp RA(RC(F10))  &kp RA(RC(F11))  &kp RA(RC(F12))                  &kp RA(LA(F9))  &kp RA(LA(F10))  &kp RA(LA(F11))  &kp RA(LA(F12))  &kp F11  &kp F12
-                                &trans           &kp LSHFT        &kp SPACE                        &kp SPACE       &kp LSHFT        &trans
+&kp ESCAPE  &kp RA(RC(F1))  &kp RA(RC(F2))   &kp RA(RC(F3))   &kp RA(RC(F4))   &kp RA(KP_NUMBER_1)  &kp RA(KP_NUMBER_7)  &kp RA(KP_NUMBER_9)  &kp RA(KP_NUMBER_4)  &kp RA(LA(F1))  &kp RA(LA(F2))   &kp RA(LA(F3))   &kp RA(LA(F4))   &kp C_VOLUME_UP
+&kp TAB     &kp RA(RC(F5))  &kp RA(RC(F6))   &kp RA(RC(F7))   &kp RA(RC(F8))   &kp RA(KP_NUMBER_2)  &kp RA(KP_NUMBER_8)  &kp RA(KP_NUMBER_0)  &kp RA(KP_NUMBER_5)  &kp RA(LA(F5))  &kp RA(LA(F6))   &kp RA(LA(F7))   &kp RA(LA(F8))   &kp C_VOL_DN
+&kp LCTRL   &kp RA(RC(F9))  &kp RA(RC(F10))  &kp RA(RC(F11))  &kp RA(RC(F12))  &kp RA(KP_NUMBER_3)                                            &kp RA(KP_NUMBER_6)  &kp RA(LA(F9))  &kp RA(LA(F10))  &kp RA(LA(F11))  &kp RA(LA(F12))  &kp K_MUTE
+                                             &kp LEFT_ALT     &kp LSHFT        &kp SPACE                                                      &kp SPACE            &kp LSHFT       &kp LEFT_ALT
             >;
         };
     };
