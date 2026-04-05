@@ -112,10 +112,10 @@
         ergo-be-base {
             display-name = "base";
             bindings = <
-&kp ESCAPE    &kp M            &kp H           &kp R          &kp E                &kp RBKT             &kp DELETE  &kp BACKSPACE  &kp P                &kp APOS           &kp I        &sl 1           &kp X            &to 0
-&kp TAB       &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH           &kp ENTER   &kp ENTER      &lt 2 O              &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &kp TAB
-&kp LEFT_GUI  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                                  &mt LEFT_GUI V       &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp RIGHT_GUI
-                                               &mo 3          &kp ENTER            &mt RIGHT_ALT SPACE                             &mt RIGHT_ALT SPACE  &kp ENTER          &mo 6
+&kp ESCAPE    &kp M            &kp H           &kp R          &kp E                &kp RBKT        &kp DELETE  &kp BACKSPACE  &kp P           &kp APOS           &kp I        &sl 1           &kp X            &kp CAPS
+&kp TAB       &mt RIGHT_ALT A  &mt LEFT_ALT K  &mt LCTRL F    &mt LEFT_SHIFT SEMI  &lt 2 FSLH      &kp ENTER   &kp ENTER      &lt 2 O         &mt RIGHT_SHIFT L  &mt RCTRL J  &mt LEFT_ALT D  &mt RIGHT_ALT S  &kp TAB
+&kp LEFT_GUI  &kp LBKT         &kp C           &interogation  &lt 3 U              &mt LEFT_GUI Q                             &mt LEFT_GUI V  &lt 3 DOT          &kp COMMA    &kp G           &kp B            &kp RIGHT_GUI
+                                               &mo 3          &kp ENTER            &lt 9 SPACE                                &lt 9 SPACE     &kp ENTER          &mo 6
             >;
         };
 
@@ -205,6 +205,15 @@
 &kp TAB    &kp LSHFT  &kp A     &kp K     &kp I      &kp FSLH   &trans  &kp END   &kp F3  &kp F4  &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_DOWN
 &kp LCTRL  &kp LALT   &kp LBKT  &kp C     &kp H      &kp U                        &kp F5  &kp F6  &kp F7    &kp F8    &kp F9     &kp K_MUTE
                                 &trans    &kp ENTER  &kp SPACE                    &trans  &trans  &trans
+            >;
+        };
+
+        hperland {
+            bindings = <
+&kp F1  &kp F2  &kp RA(RC(F1))  &kp RA(RC(F2))   &kp RA(RC(F3))   &kp RA(RC(F4))   &trans  &trans  &kp LA(RA(F1))  &kp RA(LA(F2))   &kp RA(LA(F3))   &kp RA(LA(F4))   &kp F7   &kp F8
+&kp F3  &kp F4  &kp RA(RC(F5))  &kp RA(RC(F6))   &kp RA(RC(F7))   &kp RA(RC(F8))   &trans  &trans  &kp RA(LA(F5))  &kp RA(LA(F6))   &kp LA(RA(F7))   &kp RA(LA(F8))   &kp F9   &kp F10
+&kp F5  &kp F6  &kp RA(RC(F9))  &kp RA(RC(F10))  &kp RA(RC(F11))  &kp RA(RC(F12))                  &kp RA(LA(F9))  &kp RA(LA(F10))  &kp RA(LA(F11))  &kp RA(LA(F12))  &kp F11  &kp F12
+                                &trans           &kp LSHFT        &kp SPACE                        &kp SPACE       &kp LSHFT        &trans
             >;
         };
     };
